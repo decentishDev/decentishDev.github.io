@@ -11288,10 +11288,10 @@ primary-rgb
 }
 body {
   background: url("assets/websiteBackground.png") no-repeat center center fixed;
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  background-size: auto;
-  -o-background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .bg-featured-blog {
