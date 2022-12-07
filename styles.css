@@ -11287,11 +11287,15 @@ primary-rgb
   }
 }
 body {
-  background: url("assets/websiteBackground.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  /* background: url("assets/websiteBackground.png") no-repeat center center fixed; */
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover; */
+
+  
+  background: url("assets/mainBackground4000x4000.png");
+  background-size: 100% 100%;
+  /* background-size: cover;
+  -o-background-size: cover; */
 }
 
 .bg-featured-blog {
@@ -11448,7 +11452,7 @@ body {
             clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 159, 105, 0.7);
+    background-color: rgba(16, 97, 67, 0.7);
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }
