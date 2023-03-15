@@ -11306,7 +11306,7 @@ body {
 @media only screen and (orientation: portrait) {
   body {
     background-attachment: scroll;
-    background-size: 50% 100%;
+    background-size: 200% 100%;
   }
 }
 
