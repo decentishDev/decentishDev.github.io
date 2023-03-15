@@ -11293,10 +11293,21 @@ body {
 
   
   background: url("assets/4000x4000_backgroundWithBlackBars.png");
-  background-size: 100% 100%;
-  background-attachment: fixed !important;
   /* background-size: cover;
   -o-background-size: cover; */
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+}
+@media only screen and (orientation: portrait) {
+  body {
+    background-attachment: scroll;
+    background-size: 50% 100%;
+  }
 }
 
 .bg-featured-blog {
