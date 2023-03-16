@@ -11293,8 +11293,8 @@ body {
 
   
   background: url("assets/body-background.png");
+  background-position: 0%;
   background-size: contain;
-  background-position: center;
   background-repeat: repeat-y;
 }
 /* 
