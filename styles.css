@@ -11292,11 +11292,12 @@ body {
   -moz-background-size: cover; */
 
   
-  background: url("assets/4000x4000_backgroundWithBlueBars.png");
-  /* background-size: cover;
-  -o-background-size: cover; */
+  background: url("assets/body-background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
 }
-
+/* 
 @media only screen and (orientation: landscape) {
   body {
     background-attachment: fixed;
@@ -11308,7 +11309,7 @@ body {
     background-attachment: scroll;
     background-size: 200% 100%;
   }
-}
+} */
 
 .bg-featured-blog {
   height: 100%;
