@@ -11294,22 +11294,19 @@ body {
   
   background: url("assets/body-background.png");
   background-position: 0%;
-  background-size: contain;
   background-repeat: repeat-y;
 }
-/* 
+
 @media only screen and (orientation: landscape) {
   body {
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: contain;
   }
 }
 @media only screen and (orientation: portrait) {
   body {
-    background-attachment: scroll;
-    background-size: 200% 100%;
+    background-size: cover; 
   }
-} */
+}
 
 .bg-featured-blog {
   height: 100%;
