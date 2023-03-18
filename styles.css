@@ -127,7 +127,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(2.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -11412,7 +11412,7 @@ body {
 }
 .portfolio-item .caption .caption-content {
   color: #fff;
-  margin: auto 2rem 2rem;
+  margin: auto auto auto;
 }
 .portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
   font-size: 0.8rem;
@@ -11436,9 +11436,9 @@ body {
   }
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
   }
   .portfolio-item img {
     transition: -webkit-clip-path 0.25s ease-out;
@@ -11448,13 +11448,13 @@ body {
             clip-path: inset(-1px);
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
+    /* -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem); */
   }
   .portfolio-item:hover .caption {
     background-color: rgba(16, 97, 67, 0.7);
-    -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
+    /* -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem); */
   }
   .copyleft {
     display: inline-block;
