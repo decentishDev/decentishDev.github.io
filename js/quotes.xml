@@ -1,59 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quotes>
   <quote>
-    <text>User interface is the process of shifting from chaotic complexity to elegant simplicity.</text>
+    <text>"User interface is the process of shifting from chaotic complexity to elegant simplicity."</text>
     <author>Akshat Paul</author>
   </quote>
   <quote>
-    <text>The best way to predict the future is to invent it.</text>
+    <text>"The best way to predict the future is to invent it."</text>
     <author>Alan Kay</author>
   </quote>
   <quote>
-    <text>Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.</text>
+    <text>"Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it."</text>
     <author>Alan Peris</author>
   </quote>
   <quote>
-    <text>A computer would deserve to be called intelligent if it could deceive a human into believing that it was human.</text>
+    <text>"A computer would deserve to be called intelligent if it could deceive a human into believing that it was human."</text>
     <author>Alan Turing</author>
   </quote>
   <quote>
-    <text>A new idea comes suddenly and in a rather intuitive way, but intuition is nothing but the outcome of earlier intellectual experience.</text>
+    <text>"A new idea comes suddenly and in a rather intuitive way, but intuition is nothing but the outcome of earlier intellectual experience."</text>
     <author>Albert Einstein</author>
   </quote>
   <quote>
-    <text>No amount of testing can prove a software right, a single test can prove a software wrong.</text>
+    <text>"No amount of testing can prove a software right, a single test can prove a software wrong."</text>
     <author>Amir Ghahrai</author>
   </quote>
   <quote>
-    <text>One hundred years from now, our engineering may seem as archaic as the techniques used by medieval cathedral builders seem to today’s civil engineers, while our craftsmanship will still be honored.</text>
+    <text>"One hundred years from now, our engineering may seem as archaic as the techniques used by medieval cathedral builders seem to today’s civil engineers, while our craftsmanship will still be honored."</text>
     <author>Andy Hunt</author>
   </quote>
   <quote>
-    <text>Technology is dominated by two types of people, those who understand what they do not manage and those who manage what they do not understand.</text>
+    <text>"Technology is dominated by two types of people, those who understand what they do not manage and those who manage what they do not understand."</text>
     <author>Archibald Putt</author>
   </quote>
   <quote>
-    <text>When a distinguished but elderly scientist states that something is possible, he is almost certainly right. When he states that something is impossible, he is very probably wrong.</text>
+    <text>"When a distinguished but elderly scientist states that something is possible, he is almost certainly right. When he states that something is impossible, he is very probably wrong."</text>
     <author>Arthur C. Clarke</author>
   </quote>
   <quote>
-    <text>A key principle of any effective software engineering, not only reliability-oriented engineering, simplicity is a quality that, once lost, can be extraordinarily difficult to recapture.</text>
+    <text>"A key principle of any effective software engineering, not only reliability-oriented engineering, simplicity is a quality that, once lost, can be extraordinarily difficult to recapture."</text>
     <author>Betsy Beyer</author>
   </quote>
   <quote>
-    <text>The mark of a mature programmer is willingness to throw out code you spent time on when you realize it’s pointless.</text>
+    <text>"The mark of a mature programmer is willingness to throw out code you spent time on when you realize it’s pointless."</text>
     <author>Bram Cohen</author>
   </quote>
   <quote>
-    <text>Everything should be made as simple as possible. But to do that you have to master complexity.</text>
+    <text>"Everything should be made as simple as possible. But to do that you have to master complexity."</text>
     <author>Butler Lampson</author>
   </quote>
   <quote>
-    <text>The magic of a computer lies in its ability to become almost anything you can imagine, as long as you can explain exactly what that is.</text>
+    <text>"The magic of a computer lies in its ability to become almost anything you can imagine, as long as you can explain exactly what that is."</text>
     <author>Daniel Hillis</author>
-  </quote>
-  <quote>
-    <text>Computer science research is different from these more traditional disciplines. Philosophically it differs from the physical sciences because it seeks not to discover, explain, or exploit the natural world, but instead to study the properties of machines of human creation. In this it as analogous to mathematics, and indeed the “science” part of computer science is, for the most part mathematical in spirit. But an inevitable aspect of computer science is the creation of computer programs: objects that, though intangible, are subject to commercial exchange.</text>
-    <author>Dennis Ritchie</author>
   </quote>
 </quotes>
