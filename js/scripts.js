@@ -122,15 +122,20 @@ const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote-text');
 const quoteAuthor = document.getElementById('quote-author');
 
-fetch('https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand')
-  .then(response => response.json())
-  .then(data => {
-    const quote = data[0];
-    const strippedQuote = quote.content.rendered.replace(/(<([^>]+)>)/gi, '').trim();
-    quoteText.textContent = `"${strippedQuote}"`;
-    quoteAuthor.textContent = `- ${quote.title.rendered}`;
-    quoteContainer.style.display = 'flex';
-  })
-  .catch(error => {
-    console.error('Error fetching quote:', error);
-  });
+fetch('https://decentishdev.github.io/website/js/quotes.xml')
+.then(response => response.text())
+.then(data => {
+const parser = new DOMParser();
+const xml = parser.parseFromString(data, 'application/xml');
+const quotes = xml.getElementsByTagName('quote');
+const index = Math.floor(Math.random() * quotes.length);
+const quote = quotes[index];
+const text = quote.getElementsByTagName('text')[0].textContent;
+const author = quote.getElementsByTagName('author')[0].textContent;
+quoteText.textContent = "${text}";
+quoteAuthor.textContent = " - ${author}";
+quoteContainer.style.display = 'flex';
+})
+.catch(error => {
+console.error('Error fetching quote:', error);
+});
