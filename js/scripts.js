@@ -126,7 +126,8 @@ fetch('https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand')
   .then(response => response.json())
   .then(data => {
     const quote = data[0];
-    quoteText.textContent = `"${quote.content.rendered}"`;
+    const strippedQuote = quote.content.rendered.replace(/(<([^>]+)>)/gi, '');
+    quoteText.textContent = `"${strippedQuote}"`;
     quoteAuthor.textContent = `- ${quote.title.rendered}`;
     quoteContainer.style.display = 'flex';
   })
