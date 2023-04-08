@@ -132,8 +132,8 @@ const index = Math.floor(Math.random() * quotes.length);
 const quote = quotes[index];
 const text = quote.getElementsByTagName('text')[0].textContent;
 const author = quote.getElementsByTagName('author')[0].textContent;
-quoteText.textContent = "${text}";
-quoteAuthor.textContent = " - ${author}";
+quoteText.textContent = `${text}`;
+quoteAuthor.textContent = ` - ${author}`;
 quoteContainer.style.display = 'flex';
 })
 .catch(error => {
