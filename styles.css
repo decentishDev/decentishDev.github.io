@@ -11477,4 +11477,5 @@ body {
 #quote-text {
   margin-bottom: 1rem;
   white-space: pre-wrap;
+  max-width: 80%;
 }
