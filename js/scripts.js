@@ -125,17 +125,28 @@ const quoteAuthor = document.getElementById('quote-author');
 fetch('https://decentishdev.github.io/website/js/quotes.xml')
 .then(response => response.text())
 .then(data => {
-const parser = new DOMParser();
-const xml = parser.parseFromString(data, 'application/xml');
-const quotes = xml.getElementsByTagName('quote');
-const index = Math.floor(Math.random() * quotes.length);
-const quote = quotes[index];
-const text = quote.getElementsByTagName('text')[0].textContent;
-const author = quote.getElementsByTagName('author')[0].textContent;
-quoteText.textContent = `"${text}"`;
-quoteAuthor.textContent = ` - ${author}`;
-quoteContainer.style.display = 'flex';
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(data, 'application/xml');
+  const quotes = xml.getElementsByTagName('quote');
+  const index = Math.floor(Math.random() * quotes.length);
+  const quote = quotes[index];
+  const text = quote.getElementsByTagName('text')[0].textContent;
+  const author = quote.getElementsByTagName('author')[0].textContent;
+  let i = 0;
+  let j = 0;
+  quoteContainer.style.display = 'flex';
+  const quoteInterval = setInterval(() => {
+    if (i < text.length) {
+      quoteText.textContent += text.charAt(i);
+      i++;
+    } else if (j < author.length) {
+      quoteAuthor.textContent += author.charAt(j);
+      j++;
+    } else {
+      clearInterval(quoteInterval);
+    }
+  }, 50);
 })
 .catch(error => {
-console.error('Error fetching quote:', error);
+  console.error('Error fetching quote:', error);
 });
