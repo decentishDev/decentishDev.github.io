@@ -122,6 +122,19 @@ const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote-text');
 const quoteAuthor = document.getElementById('quote-author');
 
+const factUrl = "https://uselessfacts.jsph.pl/api/v2/facts/today";
+const factElem = document.getElementById("fact");
+
+fetch(factUrl)
+  .then(response => response.json())
+  .then(data => {
+    factElem.textContent = data.text;
+  })
+  .catch(error => {
+    console.log(error);
+    factElem.textContent = "Failed to fetch fact :(";
+  });
+
 fetch('https://decentishdev.github.io/website/js/quotes.xml')
   .then(response => response.text())
   .then(data => {
@@ -152,17 +165,4 @@ fetch('https://decentishdev.github.io/website/js/quotes.xml')
   .catch(error => {
     console.error('Error fetching quote:', error);
   });
-
-  const factUrl = "https://uselessfacts.jsph.pl/api/v2/facts/today";
-  const factElem = document.getElementById("fact");
-  
-  fetch(factUrl)
-    .then(response => response.json())
-    .then(data => {
-      factElem.textContent = data.text;
-    })
-    .catch(error => {
-      console.log(error);
-      factElem.textContent = "Failed to fetch fact";
-    });
 
