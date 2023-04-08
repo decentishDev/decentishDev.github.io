@@ -123,30 +123,33 @@ const quoteText = document.getElementById('quote-text');
 const quoteAuthor = document.getElementById('quote-author');
 
 fetch('https://decentishdev.github.io/website/js/quotes.xml')
-.then(response => response.text())
-.then(data => {
-  const parser = new DOMParser();
-  const xml = parser.parseFromString(data, 'application/xml');
-  const quotes = xml.getElementsByTagName('quote');
-  const index = Math.floor(Math.random() * quotes.length);
-  const quote = quotes[index];
-  const text = quote.getElementsByTagName('text')[0].textContent;
-  const author = quote.getElementsByTagName('author')[0].textContent;
-  let i = 0;
-  let j = 0;
-  quoteContainer.style.display = 'flex';
-  const quoteInterval = setInterval(() => {
-    if (i < text.length) {
-      quoteText.textContent += text.charAt(i);
-      i++;
-    } else if (j < author.length) {
-      quoteAuthor.textContent += author.charAt(j);
-      j++;
-    } else {
-      clearInterval(quoteInterval);
-    }
-  }, 50);
-})
-.catch(error => {
-  console.error('Error fetching quote:', error);
-});
+  .then(response => response.text())
+  .then(data => {
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(data, 'application/xml');
+    const quotes = xml.getElementsByTagName('quote');
+    const index = Math.floor(Math.random() * quotes.length);
+    const quote = quotes[index];
+    const text = quote.getElementsByTagName('text')[0].textContent.split(''); // split text into array of characters
+    const author = quote.getElementsByTagName('author')[0].textContent.split(''); // split author into array of characters
+    let i = 0;
+    let j = 0;
+    const maxHeight = quoteContainer.clientHeight; // Get the maximum height of the quote container
+    quoteText.textContent = '';
+    quoteAuthor.textContent = '';
+    quoteContainer.style.display = 'flex';
+    quoteContainer.style.height = `${maxHeight}px`; // Set the fixed height of the quote container
+    const quoteInterval = setInterval(() => {
+      if (text.length > 0) {
+        quoteText.textContent += text.shift(); // remove first character from array and append to quote element
+      } else if (author.length > 0) {
+        quoteAuthor.textContent += author.shift(); // remove first character from array and append to author element
+      } else {
+        clearInterval(quoteInterval);
+      }
+    }, 50);
+  })
+  .catch(error => {
+    console.error('Error fetching quote:', error);
+  });
+
