@@ -1,0 +1,5 @@
+# the decentishDev website
+
+I'm not that great at any of the concepts of web development (except for maybe design) so this project was a struggle. I knew I wanted to code most of it myself, but I also didn't know where to start. I eventually found startbootstrap, which is a website that provides templates for using the Bootstrap framework. I stole elements here and there from many of templates before settling on a structure for the site. Over the last year I've learned more about html, css, and js, where I can now do almost all of it on my own, so I've recently updated the website to be a bit fancier. I created the background in Photoshop using a few pictures from Unsplash, and did a bit of css magic to get the sizing I wanted. I also updated the top of the page so that it now contains a inspirational quote related to programming, with a typing effect done in js. I also added a daily fact thingy at the bottom which just use a free api I found. We'll see what else I come up with in the future.
+
+By the way, feel free to use any of my code in your own websites or projects!
