@@ -11477,12 +11477,12 @@ body {
   }
 }
 #quote-container {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   /* height: 100vh; assuming you want the container to take up the entire viewport height */
+  height: 60vh;
 }
 
 #quote-text {
