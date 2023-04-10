@@ -4517,7 +4517,7 @@ textarea.form-control-lg {
   background-color: rgb(0, 0, 0, 0.55);
   background-clip: border-box;
   border: 0px;
-  border-radius: 1rem;
+  border-radius: 5rem;
 }
 @media only screen and (orientation: landscape) {
   .card {
