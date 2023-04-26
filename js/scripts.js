@@ -135,7 +135,7 @@ fetch(factUrl)
     factElem.textContent = "Failed to fetch fact :(";
   });
 
-fetch('https://decentishdev.github.io/website/js/quotes.xml')
+fetch('https://decentishdev.github.io/js/quotes.xml')
   .then(response => response.text())
   .then(data => {
     const parser = new DOMParser();
