@@ -28,8 +28,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="https://decentishdev.github.io/#news">News</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="https://decentishdev.github.io/#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="https://decentish.dev#news">News</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="https://decentish.dev#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact">Contact</a></li>
                     </ul>
                 </div>
@@ -53,7 +53,7 @@
                                                 <div class="p-10 p-md-10">
                                                     <div class="h2 fw-bolder">Maze generation</div>
                                                     <p>Recently, I have been experimenting with generating mazes through algorithms. The main focuses I had were generating an entirely random maze each time, displaying it, and the mazes always being completely solvable. I ended up researching famous algorithms, and eventually ended up working with <a href="http://weblog.jamisbuck.org/2011/1/3/maze-generation-kruskal-s-algorithm">Kruskal's Algorithm</a>.</p>
-                                                    <p>I created a version of the method in Python (for testing the logic of it), and then attempted to create it in an HTML website using JavaScript. This meant that you could print it, but since I have barely any experience using the language, the code didnt function properly and resulted in the website crashing a lot of the time. Lastly, I decided to make a Unity game out of it, and transpoded my poor Python script into an efficient C# generation file. After making a simple menu and player movement controls, the prototype was complete. All of the tests programs are available <a href="https://github.com/decentishDev/Maze-generator">here</a>, while the full downloadable game for Android is available <a href="https://github.com/decentishDev/Maze-generator/blob/master/Unity/Maze%20generation.apk">here</a>. Right now it's pretty glitchy and featureless, but I have big plans for other content coming soon.</p>
+                                                    <p>I created a version of the method in Python (for testing the logic of it), and then remade the algorithm in JavaScript and embedded it in a simple website. There's a preview that generates every time you load the page at the bottom of this page. Lastly, I decided to make a Unity game out of it, and transposed my poor Python script into an efficient C# generation file. After making a simple menu and player movement controls, the prototype was complete. All of the tests programs are available <a href="https://github.com/decentishDev/Maze-generator">here</a>, while the full downloadable game for Android is available <a href="https://github.com/decentishDev/Maze-generator/blob/master/Unity/Maze%20generation.apk">here</a>. Right now it's pretty glitchy and featureless, but I have big plans for other content coming soon. I also used the Unity3D project to generate the thumbnail in my portfolio by replacing the 2d rectangles with 3d rectangular prisms and doign some fancy lighting stuff.</p>
                                                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                                                         <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://play.google.com/store/apps/details?id=com.DecentishDev.SnazzySlope&hl=en_US&gl=US">Android download</a>
                                                         <a class="btn btn-outline-light btn-lg px-4" href="https://github.com/decentishDev/Maze-generator">Testing / source files</a>
@@ -92,9 +92,14 @@
                         </div>
                     </div>
                 </div>
+                <canvas id="canvas" height="550" width="550">
+                </canvas>
+                <br>
             </div>
+            
         </section>
         <br>
+        
         <!-- Footer-->
         <section id="footer">
             <div class="container px-4 px-lg-5">
@@ -118,6 +123,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/maze-generation.js"></script>
     </body>
 </html>
